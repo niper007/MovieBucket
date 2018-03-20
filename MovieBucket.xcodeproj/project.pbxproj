@@ -9,20 +9,16 @@
 /* Begin PBXBuildFile section */
 		AAE2FBEA206106BC00372405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2FBE9206106BC00372405 /* AppDelegate.swift */; };
 		AAE2FBEC206106BC00372405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2FBEB206106BC00372405 /* ViewController.swift */; };
-		AAE2FBEF206106BC00372405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE2FBED206106BC00372405 /* Main.storyboard */; };
 		AAE2FBF2206106BC00372405 /* MovieBucket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAE2FBF0206106BC00372405 /* MovieBucket.xcdatamodeld */; };
 		AAE2FBF4206106BC00372405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE2FBF3206106BC00372405 /* Assets.xcassets */; };
-		AAE2FBF7206106BC00372405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE2FBF5206106BC00372405 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAE2FBE6206106BC00372405 /* MovieBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE2FBE9206106BC00372405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE2FBEB206106BC00372405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AAE2FBEE206106BC00372405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAE2FBF1206106BC00372405 /* MovieBucket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieBucket.xcdatamodel; sourceTree = "<group>"; };
 		AAE2FBF3206106BC00372405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AAE2FBF6206106BC00372405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAE2FBF8206106BC00372405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,9 +54,7 @@
 			children = (
 				AAE2FBE9206106BC00372405 /* AppDelegate.swift */,
 				AAE2FBEB206106BC00372405 /* ViewController.swift */,
-				AAE2FBED206106BC00372405 /* Main.storyboard */,
 				AAE2FBF3206106BC00372405 /* Assets.xcassets */,
-				AAE2FBF5206106BC00372405 /* LaunchScreen.storyboard */,
 				AAE2FBF8206106BC00372405 /* Info.plist */,
 				AAE2FBF0206106BC00372405 /* MovieBucket.xcdatamodeld */,
 			);
@@ -126,9 +120,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAE2FBF7206106BC00372405 /* LaunchScreen.storyboard in Resources */,
 				AAE2FBF4206106BC00372405 /* Assets.xcassets in Resources */,
-				AAE2FBEF206106BC00372405 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,25 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AAE2FBED206106BC00372405 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAE2FBEE206106BC00372405 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AAE2FBF5206106BC00372405 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAE2FBF6206106BC00372405 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AAE2FBF9206106BC00372405 /* Debug */ = {

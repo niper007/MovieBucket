@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        let headerView = UIView()
+        headerView.backgroundColor = .red
+        self.view.addSubview(headerView)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
