@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FPe-D0-Onb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iar-zZ-pmt">
+            <objects>
+                <viewController id="FPe-D0-Onb" customClass="ViewController" customModule="MovieBucket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0C8-ie-II7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9uy-f7-qxf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9uy-f7-qxf" firstAttribute="trailing" secondItem="iUk-bb-bcz" secondAttribute="trailing" id="7Hz-HY-lZ9"/>
+                            <constraint firstItem="9uy-f7-qxf" firstAttribute="top" secondItem="0C8-ie-II7" secondAttribute="top" id="LZE-yF-KU1"/>
+                            <constraint firstAttribute="bottom" secondItem="9uy-f7-qxf" secondAttribute="bottom" id="VTn-g7-aWW"/>
+                            <constraint firstItem="9uy-f7-qxf" firstAttribute="leading" secondItem="iUk-bb-bcz" secondAttribute="leading" id="g08-2x-7U3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iUk-bb-bcz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ceX-hX-7j7"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="moviePoster" destination="9uy-f7-qxf" id="PeZ-8R-rwr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxM-gg-bjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-126"/>
+        </scene>
+    </scenes>
+</document>

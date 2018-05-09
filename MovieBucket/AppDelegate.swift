@@ -15,28 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
+    
+    
+        [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
+       // window = UIWindow(frame: UIScreen.main.bounds)
         
-        //Create a new instance of Viewcontroller
-        // let mainViewController = StartController()
-        
-        // Set the initial View Controller to our instance of ViewController
-        //  window?.rootViewController = mainViewController
-        
-        
-        
-       
-        let first = ViewController(nibName: nil, bundle: nil)
+       // let first = ViewController(nibName: nil, bundle: nil)
         
        
         
         // Present the window
-        self.window!.rootViewController = first;
-        window?.makeKeyAndVisible()
+     //   self.window!.rootViewController = first;
+       // window?.makeKeyAndVisible()
         
         return true
+ 
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
