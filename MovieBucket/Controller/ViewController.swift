@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     //var movieTitle:UILabel!
     
+  
     @IBOutlet weak var moviePoster: UIImageView!
     var addedMovies = [String]()
     var movies = [Movies.Content]()
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         //Default value
-        getData(popularButton)
+        getDataForSelected(button: popularButton)
         self.becomeFirstResponder() // To get shake gesture
  
 }
@@ -51,7 +52,7 @@ class ViewController: UIViewController {
         popularButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         popularButton.titleLabel?.textAlignment = .center
         popularButton.tag = discoverType.popular.rawValue
-        popularButton.addTarget(self, action: #selector(getData(_:)), for: .touchUpInside)
+        popularButton.addTarget(self, action: #selector(getDataForSelected(button:)), for: .touchUpInside)
         self.view.addSubview(popularButton)
         
         goodGradeButton = UIButton()
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
         goodGradeButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         goodGradeButton.titleLabel?.textAlignment = .center
         goodGradeButton.tag = discoverType.rating.rawValue
-        goodGradeButton.addTarget(self, action: #selector(getData(_:)), for: .touchUpInside)
+        goodGradeButton.addTarget(self, action: #selector(getDataForSelected(button:)), for: .touchUpInside)
         self.view.addSubview(goodGradeButton)
         
         oldMovieButton = UIButton()
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
         oldMovieButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         oldMovieButton.titleLabel?.textAlignment = .center
         oldMovieButton.tag = discoverType.old.rawValue
-        oldMovieButton.addTarget(self, action: #selector(getData(_:)), for: .touchUpInside)
+        oldMovieButton.addTarget(self, action: #selector(getDataForSelected(button:)), for: .touchUpInside)
         self.view.addSubview(oldMovieButton)
         
         //Autolayout
@@ -112,24 +113,20 @@ class ViewController: UIViewController {
         if motion == .motionShake {
             if movies.count > 0 {
                 let randomMovie = arc4random_uniform(UInt32(movies.count))
-                hideElements()
+                hideElements(true)
                 moviePoster.addImageFromURL(urlString: "https://image.tmdb.org/t/p/w500/\(movies[Int(randomMovie)].poster_path)")
             }
         }
     }
     
-    func hideElements(){
-        guideLabel.isHidden = true
-        popularButton.isHidden = true
-        goodGradeButton.isHidden = true
-        oldMovieButton.isHidden = true
-        guideLabel.removeFromSuperview()
-        popularButton.removeFromSuperview()
-        goodGradeButton.removeFromSuperview()
-        oldMovieButton.removeFromSuperview()
+    func hideElements(_ status:Bool){
+        guideLabel.isHidden = status
+        popularButton.isHidden = status
+        goodGradeButton.isHidden = status
+        oldMovieButton.isHidden = status
     }
     
-    @objc func getData(_ sender : UIButton){
+    @objc func getDataForSelected(button sender : UIButton){
         let selectedQuery = getQueryForSelected(button:sender)
         
         guard let url = URL(string: selectedQuery) else {return}
