@@ -8,8 +8,11 @@
 
 import Foundation
 
-let POPULAR_MOVIES = "https://api.themoviedb.org/3/discover/movie?api_key=07818be4aa5cd458ed604c904737e592&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"
+ let APIKEY = "07818be4aa5cd458ed604c904737e592"
+ let BASE_URL = "https://api.themoviedb.org/3/discover/movie?api_key=\(APIKEY)&language=en-US"
 
-let RATING_MOVIES = "https://api.themoviedb.org/3/discover/movie?api_key=07818be4aa5cd458ed604c904737e592&language=en-US&include_adult=false&include_video=false&page=1&vote_average.gte=8.0"
+let POPULAR_MOVIES = "\(BASE_URL)&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"
 
-let OLD_MOVIES = "https://api.themoviedb.org/3/discover/movie?api_key=07818be4aa5cd458ed604c904737e592&language=en-US&include_adult=false&include_video=false&page=1&primary_release_date.lte=1999-12-31"
+let RATING_MOVIES = "\(BASE_URL)&include_adult=false&include_video=false&page=1&vote_average.gte=8.0"
+
+let OLD_MOVIES = "\(BASE_URL)&include_adult=false&include_video=false&page=1&primary_release_date.lte=1999-12-31"

@@ -6,12 +6,6 @@
 //  Copyright © 2018 Niklas Persson. All rights reserved.
 //
 
-
-//https://developers.themoviedb.org/3/getting-started/search-and-query-for-details
-
-//https://www.themoviedb.org/documentation/api
-
-//This API for movies
 import UIKit
 
 enum discoverType: Int {
@@ -27,7 +21,6 @@ class ViewController: UIViewController {
 
     
     var addedMovies = [String]()
-    let APIKEY:String = "07818be4aa5cd458ed604c904737e592"
     let API_ADDRESS:String = "https://api.themoviedb.org/3/movie/550?api_key="
     var movies = [Movies.Content]()
     var guideLabel:UILabel!
