@@ -56,6 +56,13 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		AA1C77AE20A397C2000E1AF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AAE2FBDD206106BC00372405 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +83,7 @@
 		AAE2FBE8206106BC00372405 /* MovieBucket */ = {
 			isa = PBXGroup;
 			children = (
+				AA1C77AE20A397C2000E1AF1 /* View */,
 				AA1C778220A34520000E1AF1 /* Data */,
 				AA1C778020A3450F000E1AF1 /* Controller */,
 				AAE2FBE9206106BC00372405 /* AppDelegate.swift */,

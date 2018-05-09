@@ -21,20 +21,18 @@ class ViewController: UIViewController {
 
     
     var addedMovies = [String]()
-    let API_ADDRESS:String = "https://api.themoviedb.org/3/movie/550?api_key="
     var movies = [Movies.Content]()
     var guideLabel:UILabel!
     var popularButton: UIButton!
     var goodGradeButton: UIButton!
     var oldMovieButton:UIButton!
     
-    @IBOutlet weak var movieInfo: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         getData(popularButton)
-         self.becomeFirstResponder() // To get shake gesture
+        self.becomeFirstResponder() // To get shake gesture
  
 }
     
