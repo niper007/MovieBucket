@@ -13,11 +13,9 @@ enum discoverType: Int {
     case rating = 1
     case old = 2
 }
+
 class ViewController: UIViewController {
     
-    //var movieTitle:UILabel!
-    
-  
     @IBOutlet weak var moviePoster: UIImageView!
     var addedMovies = [String]()
     var movies = [Movies.Content]()
@@ -29,11 +27,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        //Default value
         getDataForSelected(button: popularButton)
-        self.becomeFirstResponder() // To get shake gesture
+        self.becomeFirstResponder()
  
-}
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     func setupView(){
         self.view.backgroundColor = UIColor.black
@@ -169,11 +171,6 @@ class ViewController: UIViewController {
         return selectedQuery
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-   
     override var prefersStatusBarHidden: Bool {
         return true
     }
